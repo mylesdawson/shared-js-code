@@ -1,0 +1,42 @@
+{
+  "name": "@mylesdawson/shared-js-code",
+  "version": "1.0.3",
+  "source": "src/index.js",
+  "main": "dist/main.js",
+  "module": "dist/module.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build:prod": "npm run build && np -y",
+    "build:prod:patch": "npm run build && np patch -y",
+    "build:prod:minor": "npm run build && np minor -y",
+    "build:prod:major": "npm run build && np major -y",
+    "build": "npm run clean && parcel build",
+    "clean": "npx rimraf -rf dist/",
+    "test": "echo 'No test specified'"
+  },
+  "devDependencies": {
+    "np": "^7.6.0",
+    "parcel": "^2.7.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/",
+    "access": "restricted"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mylesdawson/shared-js-code.git"
+  },
+  "keywords": [],
+  "author": "mylesdawson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mylesdawson/shared-js`-code/issues"
+  },
+  "homepage": "https://github.com/mylesdawson/shared-js-code#readme",
+  "np": {
+    "branch": "master",
+    "yarn": false
+  }
+}

@@ -1,0 +1,9 @@
+node_modules
+dist
+
+.cache/
+.env
+.history
+.npmrc
+.parcel-cache
+.vscode
